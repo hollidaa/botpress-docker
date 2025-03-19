@@ -1,4 +1,4 @@
-FROM botpress/botpress:v16.0.20
+FROM ghcr.io/botpress/botpress:v16.0.20
 
 # 기존 DATABASE_URL 대신 직접적인 데이터베이스 연결 변수들 사용
 ENV BP_DATABASE_TYPE=postgres
