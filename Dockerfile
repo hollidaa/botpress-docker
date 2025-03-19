@@ -1,4 +1,4 @@
-FROM botpress/server:v12.31.9
+FROM botpress/server:latest
 
 # 기존 DATABASE_URL 대신 직접적인 데이터베이스 연결 변수들 사용
 ENV BP_DATABASE_TYPE=postgres
