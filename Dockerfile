@@ -4,6 +4,8 @@ ENV DATABASE_URL=postgresql://bot_base_user:MNDKyBvGTFzvt3PJMZJzScfst8pw4@dep-cn
 ENV EXTERNAL_URL=https://botpress-docker-d75i.onrender.com
 ENV PORT=3000
 ENV PG_SSL=true
+ENV PGSSLMODE=require
+ENV NODE_TLS_REJECT_UNAUTHORIZED=0
 
 EXPOSE 3000
 
