@@ -1,4 +1,4 @@
-FROM ghcr.io/botpress/botpress:v16.0.20
+FROM botpress/server:latest
 
 # 기존 DATABASE_URL 대신 직접적인 데이터베이스 연결 변수들 사용
 ENV BP_DATABASE_TYPE=postgres
@@ -7,7 +7,6 @@ ENV BP_DATABASE_PORT=5432
 ENV BP_DATABASE_USER=bot_base_user
 ENV BP_DATABASE_PASSWORD=MNDKyBvGTFzvt3PJMZJzScfst8pw4
 ENV BP_DATABASE_DB=bot_base
-ENV BP_DATABASE_URL=postgresql://bot_base_user:MNDKyBvGTFzvt3PJMZJzScfst8pw4@dep-cnrsrciu0t7l75l58g-a.oregon-postgres.render.com/bot_base?sslmode=require
 
 # 필수 기본 설정
 ENV EXTERNAL_URL=https://botpress-docker-d75i.onrender.com
